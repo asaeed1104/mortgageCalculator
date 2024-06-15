@@ -24,5 +24,10 @@ In order to run the test using the cypress runner, use the following in the term
 Alternatively, to run the tests in headless mode:
    - npx cypress run
 
+## Other considerations
+
+- This test could be expanded to check the graph for the mortgage calculator to verify the monthly payment is correct.
+- Since rates are dynamic we should also consider that when verify interest rate and final monthly amount.
+- We could expand the page object and json by adding more methods for the mortgage calculator page along with any data that can be stored in the json. 
 
 
