@@ -17,8 +17,13 @@ describe ('Interest rate test should',() => {
         mortgageCalculator.clickCurrentRateButton(data.url,data.currentRateUrl);
     })
     })
+
     it('verify invalid input values', () => {
         mortgageCalculator.verifyInvalidInputValues('!$');
         mortgageCalculator.verifyInvalidInputValues('Abc');
+    })
+
+    it('verify valid input values', () => {
+        mortgageCalculator.verifyValidInputValues();
     })
 })
